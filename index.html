@@ -15,12 +15,25 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
   <!-- CSS  -->
    <link rel="stylesheet" href="./assets/css/index.css">
-   <!-- <link rel="stylesheet" href="./assets/css/common.css"> -->
+   <link rel="stylesheet" href="./assets/css/header.css">
 </head>
 <body>
-
+<header>
+  <div>logo</div>
+  <ul class="nav-list">
+      <li>Home</li>
+      <li>About Us</li>
+      <li>Services</li>
+      <li>Partner With Us </li>
+      <li>Resources</li>
+      <li>Contact Us</li>
+  </ul>
+  <button>
+    <i><i class="fas fa-bars"></i></i>
+  </button>
+</header>
   <!-- HERO -->
-  <header class="hero" role="banner" aria-label="Hero section">
+  <section class="hero" role="banner" aria-label="Hero section">
     <div class="hero-inner container" data-aos="fade-up" data-aos-duration="900">
       <h1>Every Cancer Journey Deserves Care, Compassion, and Accessibility</h1>
       <p>Bringing specialized cancer care to your doorstep across India, bridging the gap between patients and quality treatment.</p>
@@ -29,7 +42,7 @@
         <a class="btn btn-ghost" href="#services" role="button"><i class="fa-solid fa-list-check"></i> Explore All Services</a>
       </div>
     </div>
-  </header>
+  </section>
 
   <!-- STATS -->
   <section class="stats" aria-label="Our impact statistics">
@@ -224,8 +237,10 @@
   </div>
 
   <!-- Scripts -->
+   <script src="./assets/Javascript/header.js"></script>
    <script src="./assets/Javascript/curosal.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- <script src="./assets/Javascript/header.js"></script> -->
   <script>
     AOS.init({
       once: true,
