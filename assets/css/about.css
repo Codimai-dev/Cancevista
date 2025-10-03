@@ -1,0 +1,252 @@
+/* ABOUT PAGE STYLES */
+:root {
+  /* Brand Colors */
+  --primary: #2a9d8f;          /* Teal Blue */
+  --secondary: #e76f51;        /* Warm Orange */
+  --yellow: #e9c46a;           /* Soft Yellow */
+  --purple: #423e85;           /* Deep Purple */
+
+  /* Neutral Tones */
+  --cream: #f4f1de;
+  --muted: #6b6b6b;
+  --head: #264653;
+  --card: #ffffff;
+
+  --max-width: 1200px;
+  --radius: 12px;
+  --shadow: 0 6px 18px rgba(16, 24, 40, 0.08);
+}
+
+/* General */
+body {
+  font-family: 'Nunito', sans-serif;
+  color: #2c3e50;
+  line-height: 1.6;
+  background: #f9fafb;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #222;
+}
+
+p {
+  margin-bottom: 16px;
+  color: #444;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+/* Hero Section */
+.about-hero {
+  text-align: center;
+  padding-top: 100px;
+}
+.about-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+.about-hero p {
+  max-width: 800px;
+  margin: 0 auto 15px auto;
+  font-size: 1.05rem;
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  margin-top: 40px;
+  padding-left: 20px;
+  border-left: 3px solid #2a9d8f;
+}
+.timeline-item {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+  align-items: center;
+}
+.timeline-img img {
+  width: 140px;
+  height: 140px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.timeline-content {
+  flex: 1;
+}
+.timeline-content h4 {
+  color: #e76f51;
+  margin-bottom: 8px;
+}
+.gap-section
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Gap Section */
+.gap-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.gap-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: start;
+}
+.gap-infographic img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.gap-stats li {
+  background: #fff;
+  padding: 14px 18px;
+  margin-bottom: 14px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gap-stats li i {
+  font-size: 1.3rem;
+  color: #2a9d8f;
+  flex-shrink: 0;
+}
+
+.gap-stats li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+}
+/* Mission & Vision */
+.mv-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  text-align: center;
+}
+.mv-grid i {
+  font-size: 2.2rem;
+  color: #2a9d8f;
+  margin-bottom: 10px;
+}
+.mv-grid h3 {
+  color: #e76f51;
+}
+
+/* Core Values */
+.values-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 30px;
+  padding: 0;
+  list-style: none;
+}
+.values-list li {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 14px 18px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  font-weight: 600;
+}
+.values-list i {
+  margin-right: 10px;
+  font-size: 1.3rem;
+  color: #2a9d8f;
+}
+
+/* Team */
+.team {
+  text-align: center;
+}
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  margin-top: 40px;
+}
+.team-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+.team-card:hover {
+  transform: translateY(-6px);
+}
+.team-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+.team-card h4 {
+  margin-bottom: 6px;
+  color: #2a9d8f;
+}
+.team-cta {
+  margin-top: 30px;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.btn-primary {
+  background: #2a9d8f;
+  color: #fff;
+}
+.btn-ghost {
+  background: transparent;
+  border: 2px solid #2a9d8f;
+  color: #2a9d8f;
+  margin-left: 10px;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .gap-grid, .mv-grid {
+    grid-template-columns: 1fr;
+  }
+  .timeline-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  .timeline-img img {
+    margin-bottom: 15px;
+  }
+  .values-list {
+    grid-template-columns: 1fr;
+  }
+}

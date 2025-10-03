@@ -39,13 +39,15 @@ header > div i {
   gap: 25px;
 }
 
-.nav-list li {
+.nav-list li a{
   cursor: pointer;
   font-weight: 500;
   transition: color 0.3s ease;
+  text-decoration: none;
+  color: wheat;
 }
 
-.nav-list li:hover {
+.nav-list li a:hover {
   color: #e96443;
 }
 
@@ -84,4 +86,52 @@ header button {
   .nav-list.show {
     display: flex;
   }
+}
+.emergency-bar {
+  position: sticky;
+  bottom: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  background: var(--head);
+  color: #fff;
+  padding: 12px 18px;
+}
+.emergency-inner {
+  max-width: var(--max-width);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.emergency-actions { display: flex; gap: 10px; }
+.btn-small {
+  padding: 10px 14px;
+  border-radius: var(--radius);
+  font-weight: 600;
+}
+.call-btn { background: #ff6b6b; color: #fff;}
+.wa-btn { background: #25d366; color: #fff; }
+
+/* Section titles */
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.section-title h3 {
+    font-size: 2rem;   
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  color: var(--head);
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .hero { padding: 40px 14px; min-height: 56vh; }
+  .hero h1 { font-size: 1.4rem; }
+  .emergency-inner { flex-direction: column; gap: 12px; }
 }

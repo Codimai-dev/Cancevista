@@ -85,8 +85,8 @@ body {
 .btn-secondary { background: var(--secondary); color: #fff; }
 .btn-ghost {
   background: transparent;
-  border: 2px solid #fff;
-  color: #fff;
+  border: 2px solid var(--secondary);
+  color: var(--secondary);
 }
 
 /* Stats */
@@ -166,6 +166,9 @@ body {
   border-radius: var(--radius);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   border: 1px solid rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .service-card:hover {
   transform: translateY(-6px);
@@ -278,51 +281,3 @@ body {
 .blog-card p { color: var(--muted); }
 
 /* Emergency Footer */
-.emergency-bar {
-  position: sticky;
-  bottom: 0;
-  z-index: 1000;
-  display: flex;
-  justify-content: center;
-  background: var(--head);
-  color: #fff;
-  padding: 12px 18px;
-}
-.emergency-inner {
-  max-width: var(--max-width);
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.emergency-actions { display: flex; gap: 10px; }
-.btn-small {
-  padding: 10px 14px;
-  border-radius: var(--radius);
-  font-weight: 600;
-}
-.call-btn { background: #ff6b6b; color: #fff;}
-.wa-btn { background: #25d366; color: #fff; }
-
-/* Section titles */
-.section-title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-.section-title h3 {
-    font-size: 2rem;   
-  font-family: "Montserrat", sans-serif;
-  margin: 0;
-  color: var(--head);
-}
-
-/* Mobile */
-@media (max-width: 640px) {
-  .hero { padding: 40px 14px; min-height: 56vh; }
-  .hero h1 { font-size: 1.4rem; }
-  .emergency-inner { flex-direction: column; gap: 12px; }
-}
