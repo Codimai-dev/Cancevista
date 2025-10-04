@@ -88,6 +88,7 @@ header button {
   }
 }
 .emergency-bar {
+  min-height: 60px;
   position: sticky;
   bottom: 0;
   z-index: 1000;
@@ -96,6 +97,7 @@ header button {
   background: var(--head);
   color: #fff;
   padding: 12px 18px;
+  margin-top: 10px;
 }
 .emergency-inner {
   max-width: var(--max-width);
@@ -113,25 +115,8 @@ header button {
 .call-btn { background: #ff6b6b; color: #fff;}
 .wa-btn { background: #25d366; color: #fff; }
 
-/* Section titles */
-.section-title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-.section-title h3 {
-    font-size: 2rem;   
-  font-family: "Montserrat", sans-serif;
-  margin: 0;
-  color: var(--head);
-}
-
 /* Mobile */
 @media (max-width: 640px) {
   .hero { padding: 40px 14px; min-height: 56vh; }
   .hero h1 { font-size: 1.4rem; }
-  .emergency-inner { flex-direction: column; gap: 12px; }
 }

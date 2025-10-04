@@ -19,16 +19,19 @@
 
 /* General */
 body {
+  width: 100vw;
   font-family: 'Nunito', sans-serif;
   color: #2c3e50;
   line-height: 1.6;
-  background: #f9fafb;
+  color: var(--head);
+  background: var(--cream);
+  margin: 0;
 }
 
 .container {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 60px 20px;
+  padding: 0 20px;
 }
 
 h1, h2, h3, h4, h5 {
