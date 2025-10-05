@@ -1,4 +1,25 @@
-/* Basic Reset */
+:root {
+  /* Brand Colors */
+  --primary: #2a9d8f;          /* Teal Blue */
+  --secondary: #e76f51;        /* Warm Orange */
+  --yellow: #e9c46a;           /* Soft Yellow */
+  --purple: #423e85;           /* Deep Purple */
+
+  /* Neutral Tones */
+  --cream: #f4f1de;
+  --muted: #6b6b6b;
+  --head: #264653;
+  --card: #ffffff;
+
+  /* Global Tokens */
+  --max-width: 1200px;
+  --radius: 12px;
+  --shadow: 0 6px 18px rgba(16, 24, 40, 0.08);
+}
+
+/* --------------------
+   RESET + BASE
+-------------------- */
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +27,44 @@
   font-family: 'Nunito', sans-serif;
 }
 
-/* Header */
+body {
+  width: 100vw;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  color: var(--head);
+  background: var(--cream);
+  line-height: 1.6;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--head);
+  font-weight: 700;
+}
+p {
+  color: var(--muted);
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+a {
+  text-decoration: none;
+  color: var(--primary);
+  transition: 0.3s ease;
+}
+a:hover {
+  color: var(--secondary);
+}
+
+/* Container */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* --------------------
+   HEADER / NAV
+-------------------- */
 header {
   display: flex;
   justify-content: space-between;
@@ -39,21 +97,23 @@ header > div i {
   gap: 25px;
 }
 
-.nav-list li a{
+.nav-list li a {
   cursor: pointer;
   font-weight: 500;
   transition: color 0.3s ease;
   text-decoration: none;
   color: wheat;
 }
-
 .nav-list li a:hover {
   color: #e96443;
+}
+.nav-list li a.active {
+  color: red;
 }
 
 /* Hamburger Button */
 header button {
-  display: none; /* Show only on mobile */
+  display: none;
   background: none;
   border: none;
   color: white;
@@ -61,7 +121,7 @@ header button {
   cursor: pointer;
 }
 
-/* Responsive for mobile */
+/* Mobile Menu */
 @media (max-width: 768px) {
   .nav-list {
     position: absolute;
@@ -71,7 +131,7 @@ header button {
     flex-direction: column;
     width: 200px;
     padding: 15px 0;
-    display: none; /* Hidden initially */
+    display: none;
     border-radius: 8px;
   }
 
@@ -87,18 +147,80 @@ header button {
     display: flex;
   }
 }
+
+/* --------------------
+   BUTTONS
+-------------------- */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: var(--radius);
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: #fff;
+}
+.btn-primary:hover {
+  background: #23867d;
+}
+
+.btn-secondary {
+  background: var(--secondary);
+  color: #fff;
+}
+.btn-secondary:hover {
+  background: #cc5941;
+}
+
+.btn-outline {
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  background: transparent;
+}
+.btn-outline:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+/* Small Buttons */
+.btn-small {
+  padding: 8px 14px;
+  border-radius: var(--radius);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* --------------------
+   CARDS
+-------------------- */
+.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: var(--shadow);
+  margin-bottom: 20px;
+}
+
+/* --------------------
+   EMERGENCY BAR
+-------------------- */
 .emergency-bar {
-  min-height: 60px;
   position: sticky;
   bottom: 0;
   z-index: 1000;
   display: flex;
   justify-content: center;
-  background: var(--head);
+  background-color: var(--head);
   color: #fff;
   padding: 12px 18px;
   margin-top: 10px;
 }
+
 .emergency-inner {
   max-width: var(--max-width);
   width: 100%;
@@ -107,16 +229,14 @@ header button {
   align-items: center;
 }
 .emergency-actions { display: flex; gap: 10px; }
-.btn-small {
-  padding: 10px 14px;
-  border-radius: var(--radius);
-  font-weight: 600;
-}
-.call-btn { background: #ff6b6b; color: #fff;}
+.call-btn { background: #ff6b6b; color: #fff; }
 .wa-btn { background: #25d366; color: #fff; }
 
-/* Mobile */
-@media (max-width: 640px) {
-  .hero { padding: 40px 14px; min-height: 56vh; }
-  .hero h1 { font-size: 1.4rem; }
-}
+/* --------------------
+   UTILITIES
+-------------------- */
+.text-center { text-align: center; }
+.text-muted { color: var(--muted); }
+.mt-2 { margin-top: 0.5rem; }
+.mt-4 { margin-top: 1rem; }
+.mt-6 { margin-top: 1.5rem; }

@@ -29,7 +29,7 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header data-aos="fade-down">
+    <header>
       <div class="logo">Cancevista</div>
       <ul class="nav-list">
         <li><a href="index.html">Home</a></li>
@@ -199,11 +199,13 @@
     <script src="./assets/Javascript/header.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
-      AOS.init({
-        duration: 1000,
-        once: true,
-        easing: "ease-in-out",
-      });
+     AOS.init({
+      once: false,             
+    offset: 100,             
+    duration: 1200,          
+    easing: 'ease-in-out-sine',
+    mirror: true 
+    });
     </script>
   </body>
 </html>

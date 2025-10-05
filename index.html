@@ -21,8 +21,8 @@
 <header>
   <div>logo</div>
   <ul class="nav-list">
-        <li><a href="index.html" >Home</a></li>
-        <li ><a href="about.html" class="active">About Us</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li ><a href="about.html" >About Us</a></li>
         <li><a href="services.html" >Services</a></li>
         <li><a href="partner.html" >Partner With Us</a></li>
         <li><a href="resources.html">Resources</a></li>
@@ -207,7 +207,7 @@
       </div>
 
       <div style="text-align:center;margin-top:16px" data-aos="fade-up">
-        <a class="btn btn-ghost" href="#blog"><i class="fa-solid fa-book-open"></i> Read More Stories</a>
+        <a class="btn btn-primary" href="#blog"><i class="fa-solid fa-book-open"></i> Read More Stories</a>
       </div>
     </div>
   </section>
@@ -243,9 +243,11 @@
   <!-- <script src="./assets/Javascript/header.js"></script> -->
   <script>
     AOS.init({
-      once: true,
-      offset: 120,
-      duration: 700
+      once: false,             
+    offset: 100,             
+    duration: 1200,          
+    easing: 'ease-in-out-sine',
+    mirror: true 
     });
 
     // Animated counters: start when card enters viewport
