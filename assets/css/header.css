@@ -37,10 +37,10 @@ body {
 }
 
 /* Typography */
-h1, h2, h3, h4, h5, h6 {
+/* h1, h2, h3, h4, h5, h6 {
   color: var(--head);
   font-weight: 700;
-}
+} */
 p {
   color: var(--muted);
   margin-bottom: 1rem;
@@ -220,6 +220,12 @@ header button {
   padding: 12px 18px;
   margin-top: 10px;
 }
+@media (max-width:700px){
+  .emergency-inner{
+    flex-direction: column;
+    text-align: center;
+  }
+}
 
 .emergency-inner {
   max-width: var(--max-width);
@@ -240,3 +246,8 @@ header button {
 .mt-2 { margin-top: 0.5rem; }
 .mt-4 { margin-top: 1rem; }
 .mt-6 { margin-top: 1.5rem; }
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}

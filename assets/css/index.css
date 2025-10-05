@@ -20,6 +20,7 @@
 
 /* Hero */
 .hero {
+  width: 100%;
   position: relative;
   min-height: 70vh;
   display: flex;
@@ -34,8 +35,10 @@
 }
 .hero-inner { 
   max-width: 980px;
+  height: 100%;
   background: rgb(0, 0, 0,0.4);
-  padding: 10px 0;
+  padding-bottom: 10px;
+  border-radius: 10px;
 }
 .hero h1 {
   font-family: "Montserrat", sans-serif;
@@ -170,11 +173,6 @@
   padding: 2rem 1rem;
   background: #f9f9f9;
   text-align: center;
-}
-
-.section-title {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
 }
 
 .testimonial-wrap {
