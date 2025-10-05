@@ -108,7 +108,7 @@ header > div i {
   color: #e96443;
 }
 .nav-list li a.active {
-  color: red;
+  color: rgb(255, 94, 0);
 }
 
 /* Hamburger Button */
