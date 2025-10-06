@@ -298,6 +298,7 @@ body {
 @media (max-width: 768px) {
   .hero-inner {
     padding: 40px 20px;
+    margin-top: 40px;
   }
   .hero h1 {
     font-size: 2rem;
