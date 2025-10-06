@@ -211,13 +211,17 @@
   }
   
   .support-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 30px;
-    margin-bottom: 50px;
+    width: 100%;
+   display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+  gap: 24px;
+  margin:30px auto;
   }
   
   .support-card {
+    width: 100%;
+    max-width: 300px;
     background: var(--cream);
     border-radius: 20px;
     padding: 10px;
