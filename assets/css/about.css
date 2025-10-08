@@ -226,6 +226,9 @@ p {
   font-size: 1.05rem;
   color: var(--muted);
 }
+.team-cta{
+  margin-bottom: 100px;
+}
 
 /* Buttons */
 .btn-primary {
