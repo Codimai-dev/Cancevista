@@ -227,6 +227,9 @@
     padding: 10px;
     box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    height: auto;
+
   }
   
   .support-card:hover {
@@ -235,27 +238,32 @@
   }
   
   .support-card .icon {
-    margin-bottom: 15px;
   }
   
   .support-card .icon img {
     width: 100%;
-    height: 130px;
+    height: 150px;
     border-radius: 20px;
   }
   
   .support-card h4 {
     color: var(--purple);
     font-size: 1.1rem;
-    margin-bottom: 10px;
   }
   
   .support-card p {
     color: #555;
     font-size: 0.95rem;
     line-height: 1.6;
+    margin-bottom: 20px;
   }
-  
+  .support-card a{
+    padding: 10px;
+    background-color: var(--primary);
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 0px;
+  }
   .support-cta .cta-btn {
     background: var(--primary);
     color: #fff;

@@ -31,17 +31,22 @@
     <h1>We're Here For You</h1>
     <p>Every cancer journey begins with a single step. Reach out to us in whatever way feels most comfortable, and our team will respond promptly.</p>
   </section>
-
+   <section id="wht-icon">
+  <a href="https://wa.me/918591036502?text=Hello%2C%20I%20am%20interested%20in%20talking%20to%20a%20Care%20Advisor%20from%20Cancervista." 
+     target="_blank">
+    <img src="./assets/images/whatsapp-icon.png" alt="whatsapp-icon">
+  </a>
+</section>
   <div class="container">
 
     <!-- Speak With a Care Coordinator -->
   <section id="contact-box">
     <section class="section contact-info">
       <h2>Contact Us</h2>
-      <div><i class="fas fa-phone"></i> Phone: [Phone Number]</div>
+      <div><i class="fas fa-phone"></i>Phone:<a href="tel:+918591036502">8591036502</a></div>
       <div><i class="fas fa-clock"></i> Hours: 9:00 AM to 7:00 PM, Monday to Saturday</div>
       <div><i class="fas fa-language"></i> Languages: Hindi, English, Marathi</div>
-      <div><i class="fas fa-envelope"></i> Email: <a href="mailto:care@cancervistas.com">care@cancervistas.com</a></div>
+      <div><i class="fas fa-envelope"></i> Email: <a href="mailto:cancervistas@gmail.com">cancervistas@gmail.com</a></div>
       <div><i class="fab fa-whatsapp"></i> WhatsApp: [WhatsApp Number]</div>
     </section>
         <section class="section contact-info">
@@ -52,36 +57,28 @@
     </section>
         </section>
     <!-- Contact Form -->
-    <section class="section form-container">
-      <h2>Contact Form</h2>
-      <form>
-        <div class="form-group">
-          <label for="name">Full Name</label>
-          <input type="text" id="name" name="name" placeholder="Your full name" required>
-        </div>
-               <div class="form-group">
-          <label for="phone">Phone Number</label>
-          <input type="tel" id="phone" name="phone" placeholder="Your phone number">
-        </div>
-        <div class="form-group">
-          <label for="email">Email Address</label>
-          <input type="email" id="email" name="email" placeholder="Your email address" required>
-        </div>
-        <!-- <div class="form-group">
-          <label for="contact-method">Preferred Contact Method</label>
-          <select id="contact-method" name="contact-method">
-            <option value="email">Email</option>
-            <option value="phone">Phone</option>
-            <option value="whatsapp">WhatsApp</option>
-          </select>
-        </div> -->
-        <div class="form-group">
-          <label for="message">Brief Description of Needs</label>
-          <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
-        </div>
-        <button type="submit">Submit</button>
-      </form>
-    </section>
+ <section class="section form-container">
+  <h2>Contact Form</h2>
+  <form id="contactForm">
+    <div class="form-group">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required>
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="Your phone number">
+    </div>
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Your email address" required>
+    </div>
+    <div class="form-group">
+      <label for="message">Brief Description of Needs</label>
+      <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+</section>
     <!-- Office Address -->
     <!-- <section class="section contact-info">
       <h2>Office Address</h2>
@@ -101,5 +98,6 @@
 
   </div>
      <script src="./assets/Javascript/header.js"></script>
+    <script src="./assets/Javascript/Form.js"></script>
 </body>
 </html>

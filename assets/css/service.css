@@ -34,10 +34,10 @@ body {
   border-radius: 20px;
 }
 #service-hero p{
-    color: rgb(0, 0, 0);
+    color: white;
 }
 #service-hero .service-card{
-  background-color: rgba(0,0,0,0.08);
+  background-color: rgba(0, 0, 0, 0.384);
 }
 /* Service Card */
 .service-card {
@@ -62,7 +62,11 @@ body {
   gap: 30px;
   margin-bottom: 25px;
 }
-
+.service-header .img img{
+  max-width: 400px;
+  width: 100%;
+  border-radius: 20px;
+}
 
 .service-icon {
   flex-shrink: 0;
@@ -79,12 +83,18 @@ body {
 }
 
 .service-header h2 {
+  background-color: var(--secondary);
+  padding: 3px;
+  border-radius: 10px;
   font-size: 2.2rem;
   margin: 0;
   color: var(--head);
 }
 
 .service-header h3 {
+   background-color: var(--secondary);
+  padding: 3px;
+  border-radius: 10px;
   font-size: 1.3rem;
   margin: 8px 0 0;
   color: var(--secondary);
@@ -98,6 +108,10 @@ body {
 }
 
 .service-content h3 {
+  width: fit-content;
+   background-color: var(--secondary);
+  padding: 3px;
+  border-radius: 10px;
   font-size: 1.3rem;
   margin-bottom: 10px;
   color: var(--head);
